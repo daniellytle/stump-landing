@@ -8,7 +8,7 @@
  * Controller of the stumpYeoApp
  */
 angular.module('stumpYeoApp')
-  .controller('MainCtrl', function ($scope, $route) {
+  .controller('MainCtrl', function ($scope, $location) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -16,6 +16,10 @@ angular.module('stumpYeoApp')
     ];
 
     $scope.pageName = 'page-main';
-    $scope.$route = $route;
+    
+    $scope.isActive = function(route) {
+    	console.log($location.path());
+        return route == $location.path();
+    }
 
   });

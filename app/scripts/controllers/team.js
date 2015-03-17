@@ -8,7 +8,7 @@
  * Controller of the stumpYeoApp
  */
 angular.module('stumpYeoApp')
-  .controller('TeamCtrl', function ($scope, $route) {
+  .controller('TeamCtrl', function ($scope, $location) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -16,6 +16,5 @@ angular.module('stumpYeoApp')
     ];
 
     $scope.pageName = 'page-team';
-    $scope.$route = $route;
-
+  
   });

@@ -24,17 +24,17 @@
 
     <!-- Add your site or application content here -->
 
-    <div id='nav'>
+    <div id='nav' ng-controller="MainCtrl">
       <a ng-href='/#/'>
         <img id='logo' src='https://cdn3.iconfinder.com/data/icons/scarycons/140/tree-128.png'/>
       </a>
-      <a class='link' ng-href='#/beta' ng-class="{ 'active' : $route.current.$$route.activetab == 'beta'}">
+      <a class='link' ng-href='#/beta' ng-class="{ 'active' : isActive('/beta') }">
         <div class='inner' >Sign Up</div>
       </a>
-      <a class='link' ng-href='#/team' ng-class="{active: $route.current.$$route.activetab == 'team'}">
+      <a class='link' ng-href='#/team' ng-class="{ 'active' : isActive('/team') }">
         <div class='inner' >The Team</div>
       </a>
-      <a class='link' ng-href='#/' ng-class="{active: $route.current.$$route.activetab == 'home'}">
+      <a class='link' ng-href='#/' ng-class="{ 'active' : isActive('/')}">
         <div class='inner' >Home</div>
       </a>
     </div>

@@ -52,6 +52,7 @@ input:active {
   margin: 0 auto;
   right: 0;
   left: 0;
+  z-index: 9999;
 }
 
 #logo {
@@ -63,7 +64,7 @@ input:active {
 .link {
   float:right;
   height: 100%;
-  padding: 0 10px;
+  margin: 0 10px;
   display: table;
   font-weight: 500;
   cursor: pointer;
@@ -71,15 +72,11 @@ input:active {
 }
 
 .link:hover {
-  border-bottom: 3px solid #777;
-}
-
-.link:active {
+  border-bottom: 2px solid #777;
 }
 
 .active {
-  border-top: 3px solid #777;
-  
+  border-bottom: 2px solid #777;
 }
 
 #hero {
@@ -124,19 +121,24 @@ input:active {
   margin-bottom: 20px;
 }
 
+#sign-up {
+  margin-top: 20px;
+}
+
 #title_text {
   font-family: 'Open Sans';
   font-size: 40px;
   font-weight: 800;
-  text-align: left;
-  display: table-cell;
+  text-align: center;
   vertical-align: middle;
+  width:100%;
 }
 
 #sub_title {
   font-size:20px;
   font-weight: 300;
   text-align: center;
+  width:100%;
 }
 
 #hero_mock {
@@ -283,11 +285,11 @@ input:active {
 }
 
     .ng-enter { 
-      z-index: 8888; 
+      z-index: 888; 
       display: block; 
     }
     .ng-leave { 
-      z-index: 9999; 
+      z-index: 999; 
       display: none; 
     }
 
