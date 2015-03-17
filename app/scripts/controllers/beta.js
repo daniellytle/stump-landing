@@ -8,7 +8,7 @@
  * Controller of the stumpYeoApp
  */
 angular.module('stumpYeoApp')
-  .controller('BetaCtrl', function ($scope) {
+  .controller('BetaCtrl', function ($scope, $route) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -16,5 +16,6 @@ angular.module('stumpYeoApp')
     ];
 
     $scope.pageName = 'page-beta';
+    $scope.$route = $route;
 
   });

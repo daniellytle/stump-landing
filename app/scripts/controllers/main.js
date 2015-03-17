@@ -8,7 +8,7 @@
  * Controller of the stumpYeoApp
  */
 angular.module('stumpYeoApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, $route) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -16,5 +16,6 @@ angular.module('stumpYeoApp')
     ];
 
     $scope.pageName = 'page-main';
+    $scope.$route = $route;
 
   });

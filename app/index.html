@@ -25,22 +25,23 @@
     <!-- Add your site or application content here -->
 
     <div id='nav'>
-      <a href='/#/'>
+      <a ng-href='/#/'>
         <img id='logo' src='https://cdn3.iconfinder.com/data/icons/scarycons/140/tree-128.png'/>
       </a>
-      <a class='link' href='#/beta'>
-        <div class='inner'>Sign Up</div>
+      <a class='link' ng-href='#/beta' ng-class="{ 'active' : $route.current.$$route.activetab == 'beta'}">
+        <div class='inner' >Sign Up</div>
       </a>
-      <a class='link' href='#/team'>
-        <div class='inner'>The Team</div>
+      <a class='link' ng-href='#/team' ng-class="{active: $route.current.$$route.activetab == 'team'}">
+        <div class='inner' >The Team</div>
       </a>
-      <a class='link' href='#/about'>
-        <div class='inner'>About</div>
+      <a class='link' ng-href='#/' ng-class="{active: $route.current.$$route.activetab == 'home'}">
+        <div class='inner' >Home</div>
       </a>
     </div>
     <div class='page {{ pageName }}' ng-view=""></div>
 
-
+    <div class="footer">
+    </div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
