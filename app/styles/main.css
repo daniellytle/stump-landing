@@ -173,7 +173,7 @@ input:active {
 
 .sec-sub {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 300;
   margin: 0 8%;
 }
 
@@ -257,7 +257,7 @@ input:active {
 }
 
 .name {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 5px;
 }
