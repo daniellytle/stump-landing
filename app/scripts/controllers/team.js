@@ -8,7 +8,7 @@
  * Controller of the stumpYeoApp
  */
 angular.module('stumpYeoApp')
-  .controller('TeamCtrl', function ($scope, $location) {
+  .controller('TeamCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

@@ -100,10 +100,8 @@ input:active {
 }
 
 .beta-hold {
-  position: absolute;
   margin-top:40px;
   width:100%;
-
 }
 
 .beta-button {
@@ -154,13 +152,18 @@ input:active {
   margin-bottom: 30px;
 }
 
-#mockup {
+.mockup {
   display: block;
   margin: 0 auto;
+  max-height: 400px;
 }
 
 #used_by {
   background: #EfEfEf;
+}
+
+#top-beta {
+  position: absolute;
 }
 
 #left-head {
@@ -177,7 +180,7 @@ input:active {
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  height:90px;
+  height:65px;
   margin: 10px 45px;
   -webkit-filter: grayscale(100%);
   transition: both .3s ease;
@@ -199,30 +202,9 @@ input:active {
   margin: 0 8%;
 }
 
-/* PICTURES */
-
-#onep {
-  background: url('../images/sample.png');
-  background-size: cover;
-  background-position: 0% 5%;
-}
-
-#twop {
-  background: url('../images/sample.png');
-  background-size: cover;
-  background-position: 0% 15%;
-}
-
-#threp {
-  background: url('../images/sample.png');
-  background-size: cover;
-  background-position: 0% 25%;
-}
-
-#fourp {
-  background: url('../images/sample.png');
-  background-size: cover;
-  background-position: 0% 35%;
+.test {
+  background:#EfEfEf;
+  height:100px;
 }
 
 /* ======== */
@@ -254,9 +236,13 @@ input:active {
   width: 900px;
 }
 
+.hold {
+  max-width: 
+}
+
 .top-sec {
   width: 83%;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 40px auto;
 }
 
 
@@ -266,15 +252,17 @@ input:active {
 }
 
 .pro {
-  padding: 0 30px;
+  padding: 0 20px;
   text-align: center;
   margin-bottom:30px;
+  width:20%;
+  float:left;
 }
 
 .pic {
   border-radius: 100%;
   border: 1px solid #e1e1e1;
-  width:90px;
+  width:100px;
   margin: 0 auto 15px auto;
 }
 
